@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="student.js"></script>
+</head>
+<body>
+    <h1>Quản Lý Sinh Viên</h1>
+    <div class="cointainer">
+        <div class="container-left">
+        <form class="form">
+            <div class="title">
+                <h2>From Nhập Thông Tin</h2>
+            </div>
+            <div class="form-group row">
+              <label for="inputEmail3" class="col-sm-2 col-form-label">Mã sinh viên</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="studentID" placeholder="Vui lòng nhập mã sinh viên">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputEmail3" class="col-sm-2 col-form-label">Họ và Tên</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="name" placeholder="Vui lòng nhập tên">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="email" placeholder="Vui lòng nhập email">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputEmail3" class="col-sm-2 col-form-label">Số điện thoại</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="sdt" placeholder = "Vui lòng nhập số điện thoại">
+            </div>
+            <div class="form-group row">
+              <label for="inputEmail3" class="col-sm-2 col-form-label"> Quê quán</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="address" placeholder="Vui lòng nhập quê quán">
+              </div>
+            <div class="form-group row">
+              <label for="inputEmail3" class="col-sm-2 col-form-label" id="sex"> Giới tính</label>
+              <div class="col-sm-10">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gridRadios" id="nam" value="True" checked>
+                  <label class="form-check-label" for="gridRadios1">
+                    Nam
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gridRadios" id="nu" value="False">
+                  <label class="form-check-label" for="gridRadios2">
+                    Nữ
+                  </label>
+                </div>
+                
+              </div>
+            </div>
+       
+            <div class="form-group row">
+              <div class="col-sm-10">
+                <button type="submit" class="btn btn-primary" id="btnCreate">Sign in</button>
+              </div>
+            </div>
+          </form>
+        </div>
+    </div>
+
+    <div class="cointainer-right">
+        <h2>Danh Sách Sinh Viên</h2>
+        <table>
+            <th>
+                <tr>#</tr>
+                <tr>Họ tên</tr>
+                <tr>Email</tr>
+                <tr>Điện thoại</tr>
+                <tr>Địa Chỉ</tr>
+                <tr>Hành Động</tr>
+            </th>
+            <tbody class="tbody" id="tableBody">
+
+            </tbody>
+        </table>
+        
+    </div>
+    
+</body>
+</html>
